@@ -52,6 +52,7 @@ static int set_mcast_group(struct pingpong_context *ctx,
 {
 	struct ibv_port_attr port_attr;
 
+	printf("added just for checking\n");
 	if (ibv_query_gid(ctx->context,user_param->ib_port,user_param->gid_index,&mcg_params->port_gid)) {
 		return FAILURE;
 	}
